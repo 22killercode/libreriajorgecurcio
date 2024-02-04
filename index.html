@@ -1,0 +1,1501 @@
+<!DOCTYPE HTML>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>La docta ignorancia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="icon" type="image/png" sizes="32x32" href="ruta/al/tu/logo-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="ruta/al/tu/logo-16x16.png">
+        <!-- Incluye la biblioteca Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- Incluye la biblioteca Bootstrap JS (opcional, pero puede ser necesaria para ciertas funcionalidades) -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">La docta ignorancia</a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu" style=" background: linear-gradient(to bottom right, white, violet) !important; color: #FF00FF;">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#noti2">Lanzamientos</li>
+					<li><a href="#psi">Psicoanálisis</a></li>
+					<li><a href="#opcion2">Narrativa</a></li>					
+					<li><a href="#opcion3">Filosofía</a></li>
+					<li><a href="#opcion4">Feminismo</a></li>					
+					<li><a href="#opcion5">Ensayo</a></li>
+					<li><a href="#opcion6">Poesía</a></li>					
+					<li><a href="#opcion7">Arte</a></li>
+					<li><a href="#genesis">Nuestro genesis</a></li>					
+					<li><a href="#contacto">Contacto</a></li>										
+				</ul>
+			</nav>
+
+		
+		<!-- // aviso de mensaje enviado -->
+		<div>
+			<style>
+				/* Estilos adicionales para resaltar el mensaje */
+				#mensajeEnvio {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					background-color: #4CAF50; /* Color verde */
+					color: white;
+					padding: 15px;
+					text-align: center;
+					z-index: 1000; /* Asegura que aparezca por encima de otros elementos */
+					display: none; /* Inicialmente oculto */
+					font-size: 16px;
+				}
+
+				#cerrarMensaje {
+					position: absolute;
+					top: 5px;
+					right: 10px;
+					cursor: pointer;
+					font-size: 20px;
+				}
+			</style>
+			<div id="mensajeEnvio" style="z-index:999999999999999 !important">
+				<span id="cerrarMensaje" onclick="cerrarMensaje()">&times;</span>
+				Mensaje enviado exitosamente.
+			</div>
+			<script>
+				// Obtener la URL actual
+				var urlActual = window.location.href;
+
+				// Verificar si la URL contiene el fragmento deseado
+				if (urlActual.includes("#mensajeEnvio")) {
+					// Mostrar el div
+					document.getElementById("mensajeEnvio").style.display = "block";
+				}
+
+				// Función para cerrar el mensaje
+				function cerrarMensaje() {
+					document.getElementById("mensajeEnvio").style.display = "none";
+				}
+			</script>
+		</div>
+		<!-- pantalla de inicio -->
+		<section id="banner" class="bg-img" data-bg="libreriaViol.jpg" style="display: block;">
+			<style>
+				@media (max-width: 600px) {
+					#im2{
+						width: 78% !important; /* Máximo del 20% en pantallas responsive verticales */
+						margin: 4rem 0 4rem 0 !important
+					}
+					#banner22{
+						margin: 2rem -3rem 2rem 1rem !important
+					}
+				}
+			</style>
+			<div id="banner22">
+				<div class="inner">
+					<header>
+						<h1></h1>
+					</header>
+					<img id="im2" src="images/logo.jpg" style="border-radius: 100rem;filter: brightness(1.2);opacity: 1;">
+				</div>
+				<br>
+				<div class="inner">
+					<ul class="icons">
+						<li>
+							<a href="https://www.facebook.com" class="icon round fa-facebook"><span class="label">Facebook</span></a>
+						</li>
+						<li style="margin: 0 1rem;">
+							<a href="https://www.instagram.com" class="icon round fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=5493875880805&text=HOLA GUSTAVO TOURS LLAMAME" class="icon round fa-whatsapp"><span class="label">X-Twitter</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#one" class="more">Boton</a>
+		</section>
+		
+
+		<!-- menu de opciones de rubros -->
+		<section id="one" class="wrapper post bg-img" data-bg="libreriaAntigua.jpeg">
+			<div class="inner" style="border-radius: 6rem !important;">
+				<div class="container"  style="border-radius: 2rem !important;">
+					<style>
+					* {
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+					}
+					.scroll {
+							overflow-y: scroll;
+							height: 300px; /* Ajusta la altura según tus necesidades */
+						}
+					
+						.scroll p {
+							text-align: left;
+							margin: 0;
+							padding: 10px;
+						}
+						.p{
+							height: 100% !important;
+						}
+					.container {
+						margin: 0;
+						padding: 0;
+						border-radius: 1rem;
+						max-width: 100%;
+						width: 100%;
+						margin: 0 auto;
+						padding: 20px;
+						box-sizing: border-box;
+						background: linear-gradient(to bottom right, white, violet) !important; color: #FF00FF;
+					}
+		
+					.nav-tabs {
+					display: flex;
+					justify-content: flex-start;
+					width: 100%;
+					margin: 0 auto;
+					border-radius: 1rem;
+					}
+		
+					.nav-item {
+					margin-right: -4px;
+					}
+		
+					.nav-link {
+					color: #8A2BE2;
+					transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+					padding: 10px 15px;
+					margin-right: -4px;
+					font-size: 20px;
+					}
+		
+					.nav-link.active {
+					color: #FF00FF;
+					font-size: 24px;
+					position: relative;
+					}
+		
+					.content {
+					display: none;
+					padding: 20px;
+					border: 1px solid #cccccc;
+					border-radius: 1rem;
+					width: 100%;
+					margin: 20px auto;
+					box-sizing: border-box;
+					}
+		
+					.content.active {
+					display: block;
+					}
+		
+					@media (max-width: 600px) {
+					#im233{
+						width: 80% !important; /* Máximo del 20% en pantallas responsive verticales */
+						margin: 0 !important
+					}
+					#imlibros{
+						width: 98% !important; /* Máximo del 20% en pantallas responsive verticales */
+						height: auto !important;
+						margin: 0 !important;
+						border-radius: 0.5rem !important;
+					}
+					#chau{
+						display: none;
+					}
+					.nav-tabs {
+					flex-wrap: wrap;
+					}
+		
+					.nav-item {
+					width: 100%;
+					text-align: center;
+					}
+					.zI{
+						z-index: 88888 !important;
+					}
+					}
+					</style>
+					<br>
+					<img id="im233" src="images/logo.jpg" style="width: 20%;border-radius: 100rem; margin: 1rem auto;">
+					<div >
+					<!-- {{!-- menu de opciones --}} -->
+					<ul id="chau" class="nav nav-tabs" style="width:100%; font-size:0.5rem !important">
+						<li class="nav-item" id="desaparece">
+							<a class="nav-link active" href="#noti" id="noti2">Lanzamientos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#opcion2" id="psi">Psicoanálisis</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#opcion3">Narrativa</a>
+						</li>
+						<li class="nav-item" >
+							<a class="nav-link" href="#opcion4">Filosofía</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#opcion5">Feminismo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#opcion6">Ensayo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#opcion7">Poesía</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#opcion8">Arte</a>
+						</li>
+					</ul> 
+					<!-- contenido -->
+					<div class="" style="height: max-content !important; border-radius: 2rem !important;">
+						<div class="content active" id="noti" style="height: max-content !important;">
+							<h3>Noticias & Lanzamientos</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 80% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+															<div id="imlibros" class="carousel-item ">
+																<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+															<div id="imlibros" class="carousel-item ">
+																<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">Presentación El mito de Helena en Fundación Psicoanalítica Argentina. Pasajes de Helena y Las Troyanas de Eurípides a cargo de Dana Taicher, Andrea Giana y Marina Cachan.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 80% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+															<div id="imlibros" class="carousel-item ">
+																<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+															<div id="imlibros" class="carousel-item ">
+																<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">Presentación El mito de Helena en Fundación Psicoanalítica Argentina. Pasajes de Helena y Las Troyanas de Eurípides a cargo de Dana Taicher, Andrea Giana y Marina Cachan.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 80% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+														<div id="imlibros" class="carousel-item ">
+															<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+														<div id="imlibros" class="carousel-item ">
+															<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">Presentación El mito de Helena en Fundación Psicoanalítica Argentina. Pasajes de Helena y Las Troyanas de Eurípides a cargo de Dana Taicher, Andrea Giana y Marina Cachan.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 80% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img id="imlibros" style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+														<div id="imlibros" class="carousel-item ">
+															<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+														<div id="imlibros" class="carousel-item ">
+															<img style="height:180px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/preventa.jpg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">Presentación El mito de Helena en Fundación Psicoanalítica Argentina. Pasajes de Helena y Las Troyanas de Eurípides a cargo de Dana Taicher, Andrea Giana y Marina Cachan.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content" id="opcion2">
+							<h3>Psicoanálisis</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="content" id="opcion3">
+							<h3>Narrativa</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="content" id="opcion4">
+							<h3>Filosofia</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="content" id="opcion5">
+							<h3>Feminismo</h3>							
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="content" id="opcion6">
+							<h3>Ensayo</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="content" id="opcion7">
+							<h3>Poesia</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>                    
+						<div class="content" id="opcion8">
+							<h3>Arte</h3>
+							<div class="scroll">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+										<div class="col" align="center">
+											<div class="card"  style="padding: 1rem;">
+												<div style="align-items: center;">
+													<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+															<div class="carousel-item ">
+																<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															</div>
+														</div>
+													</div>
+													<div class="card-body" style="margin-top:-2rem">
+														<h5 class="card-title">Campera Colibri</h5>
+														<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+													</div>
+												</div>	
+												<footer align="left" style="margin-left: 1rem;" >
+													<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												</footer>
+											</div>
+										</div>
+								</div>
+								<br>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+									<div class="col" align="center">
+										<div class="card"  style="padding: 1rem;">
+											<div style="align-items: center;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+													<div class="carousel-inner">
+														<!-- Tus elementos carousel-item van aquí -->
+														<div class="carousel-item active">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperaJean.webp" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+														<div class="carousel-item ">
+															<img style="height:210px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														</div>
+													</div>
+												</div>
+												<div class="card-body" style="margin-top:-2rem">
+													<h5 class="card-title">Campera Colibri</h5>
+													<p class="card-text" style="text-align:justify">La distintiva campera "Colibrí Encantado" fusiona moda y naturaleza. Su bordado de colibrí simboliza libertad, gracia y renovación, creando una prenda única que inspira belleza y elegancia. Se hicieron 5 modelos.</p>
+												</div>
+											</div>	
+											<footer align="left" style="margin-left: 1rem;" >
+												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</footer>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>                    
+					</div>
+					<script>
+							const navTabs = document.querySelector('.nav-tabs');
+							const navLinks = document.querySelectorAll('.nav-link');
+							const contents = document.querySelectorAll('.content');
+			
+							navLinks.forEach(link => {
+							link.addEventListener('click', (e) => {
+								e.preventDefault();
+								const target = link.getAttribute('href').substring(1);
+								contents.forEach(content => {
+								if (content.id === target) {
+									content.classList.add('active');
+								} else {
+									content.classList.remove('active');
+								}
+								});
+								navLinks.forEach(link => {
+								link.classList.remove('active');
+								});
+								link.classList.add('active');
+							});
+							});
+			
+							// Responsive adjustments
+							window.addEventListener('resize', () => {
+							if (window.innerWidth < 768) {
+								navTabs.style.width = '100%';
+							} else {
+								navTabs.style.width = '90%';
+							}
+							});
+			
+							// Initial adjustment on page load
+							if (window.innerWidth < 768) {
+							navTabs.style.width = '100%';
+							}
+					</script>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<a href="#genesis" class="more">Learn More</a>
+			</footer>
+		</section>
+
+		<!-- Jorge Curcio -->
+			
+		<section id="genesis" class="wrapper post bg-img" data-bg="banner3.jpg">
+			<div class="inner">
+				<article class="" style="margin: 4rem 1rem; padding: 10rem 8rem; color: white;text-align: justify;">
+					<header>
+						<h4>
+							De Revistas a Bestsellers: El Viaje de Jorge Curcio por las Aguas Creativas del Mundo Editorial
+						</h4>
+					</header>
+					<div>
+						<p>
+							En el fascinante universo de la edición, Jorge Curcio se erige como un pionero incansable y visionario que ha transformado el panorama literario desde el momento en que dio sus primeros pasos en 2008. Con una visión audaz y un espíritu inquebrantable, Curcio ha tejido un legado que resuena con la pasión por contar historias extraordinarias.
+						</p>
+		
+						<p>
+							El épico viaje de Jorge Curcio comenzó con el modesto lanzamiento de una revista de 16 páginas de salida trimestral en 2008. Aunque pequeña en tamaño, esta revista marcó el nacimiento de una empresa que desafiaría los límites de la creatividad y la expresión artística. A lo largo de diez números, Curcio consolidó su visión, creando un espacio donde las palabras cobraban vida y las ideas florecían en cada página.
+						</p>
+		
+						<p>
+							En el año 2012, Curcio escribió un nuevo capítulo en su historia al lanzar su primer libro. Este hito no solo marcó una expansión en su visión, sino que también simbolizó el compromiso inquebrantable con la calidad y la diversidad literaria. Desde entonces, la editorial bajo la guía de Curcio ha florecido, dando a luz a un asombroso total de 114 títulos hasta la fecha.
+						</p>
+		
+						<p>
+							La magia de las palabras de Curcio no se limita a las páginas de sus libros, sino que se ha dispersado por todo el país, como semillas de inspiración. Con una red de distribución que abarca cada rincón de la nación, los títulos de Curcio han encontrado su camino a manos ávidas de lectores de todos los rincones del país.
+						</p>
+		
+						<p>
+							El legado de Jorge Curcio trasciende las páginas impresas; es la historia de un editor que se atrevió a soñar en grande, a desafiar las convenciones y a dar voz a aquellos cuyas historias merecían ser contadas. Hoy, su nombre resuena como un faro en el horizonte literario, guiando a escritores y lectores hacia nuevas fronteras de la imaginación.
+						</p>
+		
+						<p>
+							En cada título, en cada palabra, en cada página, la biografía de Jorge Curcio se entrelaza con la rica tapestry de la literatura, marcando su trayectoria como un editor visionario que ha dejado una huella imborrable en la historia de la edición en su país.
+						</p>
+					</div>
+					<footer>
+						<a href="/" class="more">Learn More</a>
+					</footer>
+				</article>
+			</div>
+		</section>
+		
+
+		<!-- Footer -->
+		<footer id="contacto"  style="background-color: skyblue; color: black !important; padding:2rem; margin:0;">
+			<div class="inner" id="cont">
+				<h2>Contacto</h2>
+				<script>
+					document.addEventListener('DOMContentLoaded', function () {
+						document.getElementById('contactForm').addEventListener('submit', function (event) {
+							event.preventDefault(); // Evitar el envío del formulario por defecto
+				
+							// Capturar datos del formulario
+							var nombre = document.getElementById('name').value;
+							var email = document.getElementById('email').value;
+							var ciudad = document.getElementById('city').value;
+							var numCel = document.getElementById('numCel').value;
+							var mensaje = document.getElementById('message').value;
+				
+							// Construir mensaje para WhatsApp
+							var mensajeWhatsApp = encodeURIComponent('Hola Gustavo tengo una consulta\n\nNombre: ' + nombre + '\nEmail: ' + email + '\nCiudad: ' + ciudad + '\nNúmero de celular: ' + numCel + '\nMensaje: ' + mensaje);
+				
+							// Construir URL de WhatsApp
+							var numeroWhatsApp = '+5493875880805'; // Cambia el número según tus necesidades
+							var urlWhatsApp = 'https://api.whatsapp.com/send?phone=' + numeroWhatsApp + '&text=' + mensajeWhatsApp;
+				
+							// Abrir WhatsApp en una nueva pestaña
+							window.open(urlWhatsApp, '_blank');
+				
+							// Enviar formulario
+							document.getElementById('contactForm').submit();
+						});
+					});
+				</script>
+				
+				<form id="contactForm" action="https://tbs-it.net/mensajedecontactnuestrosclient/claveCliente/puebloiruya" method="post">
+					<input type="text" value="744108/5220963puebloiruya" name="tbstk" hidden>
+					<div class="field half first">
+						<label for="name" style="color: black !important; font-weight: bold;">Nombre</label>
+						<input style="border-color: black !important; color:black" name="nombre" id="name" type="text" placeholder="Nombre">
+					</div>
+					<div class="field half">
+						<label for="email" style="color: black !important; font-weight: bold;">Email</label>
+						<input style="border-color: black !important; color:black" name="email" id="email" type="email" placeholder="Email">
+					</div>
+					<div class="field half first">
+						<label for="city" style="color: black !important; font-weight: bold;">País y ciudad</label>
+						<input style="border-color: black !important; color:black" name="ciudad" id="city" type="text" placeholder="País y ciudad">
+					</div>
+					<div class="field half">
+						<label for="phone" style="color: black !important; font-weight: bold;">Celular</label>
+						<input style="border-color: black !important; color:black" name="numCel" id="numCel" type="text" placeholder="Número de celular">
+					</div>
+					<div class="field">
+						<label for="message" style="color: black !important; font-weight: bold;">Mensaje</label>
+						<textarea style="border-color: black !important;" name="mensaje" id="message" rows="6" placeholder="Mensaje"></textarea>
+					</div>
+					<!-- Boton -->
+					<ul class="actions">
+						<li>
+							<input style="border-color: black !important;" value="Enviar mensaje" class="button alt" type="submit">
+						</li>
+					</ul>
+				</form>
+				
+
+				<style>
+					.contact-info {
+						max-width: 600px;
+						margin: 0 auto;
+					}
+			
+					.contact-info p {
+						margin: 10px 0;
+					}
+			
+					.contact-info a {
+						color: #fff;
+						text-decoration: underline;
+					}
+				</style>
+                <footer align="center"> 
+					<div align="center" >
+						<a href="https://tbs-it.net/">
+							<img src="images/TBS-IT1.jpg" style="width:22%; height:auto">
+							<p>By Sebastian Paysse for TBS-IT</p>
+						</a>
+					</div>
+				</footer>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
