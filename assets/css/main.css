@@ -3541,7 +3541,7 @@
 						border-top: solid 1px rgba(255, 255, 255, 0.25);
 						color: inherit;
 						display: block;
-						line-height: 3em;
+						line-height: 2.5em; /*aqui semaneja la distancia de los mitems dle menu */
 						text-decoration: none;
 					}
 
