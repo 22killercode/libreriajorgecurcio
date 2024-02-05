@@ -3779,6 +3779,10 @@
 				bottom: -.075em;
 			}
 
+
+	
+
+
 		#banner:before {
 			-moz-transition: opacity 3s ease;
 			-webkit-transition: opacity 3s ease;
@@ -3833,7 +3837,7 @@
 			}
 
 			#banner .more {
-				display: none;
+				display: block; /*CAMBIE stava en none*/
 			}
 
 		}
@@ -3899,6 +3903,7 @@
 			#post ul.actions li:last-child {
 				text-align: right;
 			}
+
 
 		@media screen and (max-width: 736px) {
 
@@ -4198,7 +4203,7 @@
 			}
 
 			.post .more {
-				display: none;
+				display: block; /*CAMB_IE ESTAVA ENNONE*/
 			}
 
 			.post .button {
