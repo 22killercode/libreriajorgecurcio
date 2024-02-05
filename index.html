@@ -16,55 +16,6 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 	</head>
-		<style>
-			@media (max-width: 420px) {
-				body{
-					max-width: 50% !important;
-					align-items: center;
-					justify-content: center;
-				}
-				#header{
-					max-width: 50% !important;
-					align-items: center;
-					justify-content: center;
-					margin: auto 0 !important;
-					padding: auto 0 !important;
-				}
-				#menu{
-					max-width: 75% !important;
-					align-items: center;
-					justify-content: center;
-					font-size:1.2rem;
-					margin-right: 6.9rem;
-				}
-				#banner{
-					max-width: 100% !important;
-					align-items: center;
-					justify-content: center;
-					margin: auto !important;
-					padding:  auto !important;
-					min-height: min-content;
-				}
-
-				#banner22{
-					max-width: 100% !important;
-					align-items: center;
-					justify-content: center;
-					margin: 8rem -1rem -2rem 1rem !important
-				}
-				#inner{
-					max-width: 100% !important;
-					align-items: center;
-					justify-content: center;
-					margin: auto !important
-				}
-				#im2{
-					max-width: 100% !important;
-					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
-				}
-			}
-
-		</style>
 	<body>
 
 		<!-- Header -->
@@ -142,8 +93,71 @@
 
 		<!-- pantalla de inicio -->
 		<section id="banner" class="bg-img" data-bg="libreriaViol.jpg" style="display: block;">
+			<style>
+
+
+				@media ((max-width: 800px ) and (orientation: landscape)) {
+					#im2{
+						width: 100% !important; /* Máximo del 20% en pantallas responsive hori */
+						margin: auto !important
+					}
+					#banner22{
+						margin: 4rem 0 2rem 0 !important
+					}
+				}
+
+				@media (max-width: 800px) {
+					#im2{
+						width: 105% !important; /* Máximo del 20% en pantallas responsive verticales */
+					}
+					#banner22{
+						margin: 4rem 0 2rem 0 !important
+					}
+				}
+
+				@media (max-width: 600px) {
+					#im2{
+						width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
+						margin: 4rem 0 2rem 0 !important
+					}
+					#banner22{
+						margin: 2rem -1rem 2rem 1rem !important
+					}
+				}
+				@media ((max-width: 600px) and (orientation: landscape)) {
+					#im2{
+						width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
+						margin: 4rem -4rem 2rem 0 !important
+					}
+					#banner22{
+						margin: 2rem -1rem 2rem 1rem !important
+					}
+				}
+
+				@media (max-width: 400px) {
+					#im2{
+						width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
+						margin: 4rem -4rem 2rem 0 !important
+					}
+					#banner22{
+						margin: 2rem -1rem 2rem 1rem !important
+					}
+				}
+				@media ((max-width: 400px) and (orientation: landscape)) {
+					#im2{
+						width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
+						margin: 4rem -4rem 2rem 0 !important
+					}
+					#banner22{
+						margin: 2rem -1rem 2rem 1rem !important
+					}
+				}
+			</style>
 			<div id="banner22">
 				<div class="inner">
+					<header>
+						<h1></h1>
+					</header>
 					<img id="im2" src="images/logo.jpg" style="border-radius: 100rem;filter: brightness(1.2);opacity: 1;">
 				</div>
 				<br>
