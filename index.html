@@ -36,15 +36,6 @@
 		<nav id="menu" style=" background: linear-gradient(to bottom right, white, rgb(198, 7, 241)) !important; color: #6c28c3;">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="#noti2" hidden>Lanzamientos</li>
-				<li><a href="#psi" hidden>Psicoanálisis</a></li>
-				<li><a href="#opcion2" hidden>Narrativa</a></li>					
-				<li><a href="#opcion3" hidden>Filosofía</a></li>
-				<li><a href="#opcion4" hidden>Feminismo</a></li>					
-				<li><a href="#opcion5" hidden>Ensayo</a></li>
-				<li><a href="#opcion6" hidden>Poesía</a></li>					
-				<li><a href="#opcion7" hidden>Arte</a></li>
-				<li><a href="#opcion9" hidden>Nacionales</a></li>					
 				<li><a href="#one">Colecciones</a></li>
 				<li><a href="#genesis">Nuestro genesis</a></li>					
 				<li><a href="#contacto">Contacto</a></li>										
@@ -199,11 +190,12 @@
 			}
 			.scroll {
 					overflow-y: scroll;
-					height: 300px; /* Ajusta la altura según tus necesidades */
+					height: 320px; /* Ajusta la altura según tus necesidades */
+					background: linear-gradient(to bottom right, white, rgb(198, 7, 241)) !important; color: #FF00FF;
 				}
 			
 				.scroll p {
-					text-align: left;
+					text-align: justify;
 					margin: 0;
 					padding: 10px;
 				}
@@ -216,11 +208,23 @@
 				border-radius: 1rem;
 				max-width: 100%;
 				width: 100%;
+				max-height: 100%;
+				height: 100%;
 				margin: 0 auto;
 				padding: 20px;
 				box-sizing: border-box;
 				background: linear-gradient(to bottom right, white, rgb(198, 7, 241)) !important; color: #FF00FF;
-				opacity: 0.9
+				opacity: 0.9999
+			}
+			.card{
+				background: linear-gradient(to bottom right, white, rgb(198, 7, 241)) !important; color: #FF00FF;
+				color: white;
+				font-size: 1rem;
+				font-family:lobster;
+				padding: 1rem
+			}
+			.card-text{
+				width: 60%;
 			}
 
 			.nav-tabs {
@@ -251,7 +255,7 @@
 
 			.content {
 			display: none;
-			padding: 20px;
+			padding: 0 !important;
 			border: 1px solid #cccccc;
 			border-radius: 1rem;
 			width: 100%;
@@ -262,151 +266,19 @@
 			.content.active {
 			display: block;
 			}
-			#imlibros{
-				width: 80% !important; /* Máximo del 20% en pantallas responsive verticales */
+			#imgLib{
+				width: 60% !important; /* Máximo del 20% en pantallas responsive verticales */
 				height: auto !important;
 				margin: 0.5rem !important;
 				border-radius: 0.5rem !important;
 			}
 
-		@media (max-width: 1200px) {
-				#im233{
-					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
-					margin: 0 !important
-
-				}
-				#imlibros{
-					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
-					height: auto !important;
-					margin: 0 !important;
-					border-radius: 0.5rem !important;
-				}
-				.nav-tabs {
-				flex-wrap: wrap;
-				}
-				.nav-item {
-				width: 100%;
-				text-align: center;
-				}
-				.zI{
-					z-index: 88888 !important;
-				}
-				.card{
-
-					margin: 0.5em !important;
-					padding:0.5em !important
-				}
-				.card-body{
-					margin: 0 !important;
-					padding:0 !important
-				}
-				.card-text{
-					margin: 0 !important;
-					padding:0 !important
-				}
-				a{
-					padding: 0 0.5em 0.5em 0.5em !important
-				}
-				.one.in.post{
-					margin: 0 !important;
-					padding: 0;
-					border-radius: 0rem;
-					max-width: 100%;
-					width: 100%;
-					box-sizing: border-box;
-				}
-				.in{
-					border-radius: 0 !important;
-				}
-				.inner.current{
-					margin: 0.5em !important;
-					padding: 0;
-					border-radius: 0 !important;
-					max-width: 100%;
-					width: 100%;
-					box-sizing: border-box;
-					background: linear-gradient(to bottom right, white, violet) !important; color: #FF00FF;
-				}
-				.container{
-					background:none !important;
-					max-width: 100%;
-					width: 100%;
-					border-radius: 0 !important;					
-				}
-
-
-		}
 		@media (max-width: 700px) {
 				#im233{
 					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
 					margin: 0 !important
 				}
-				#imlibros{
-					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
-					height: auto !important;
-					margin: 0 !important;
-					border-radius: 0.5rem !important;
-				}
-				.nav-tabs {
-				flex-wrap: wrap;
-				}
-				.nav-item {
-				width: 100%;
-				text-align: center;
-				}
-				.zI{
-					z-index: 88888 !important;
-				}
-				.card{
-					margin: 0.5em !important;
-					padding:0.5em !important
-				}
-				.card-body{
-					margin: 0 !important;
-					padding:0 !important
-				}
-				.card-text{
-					margin: 0 !important;
-					padding:0 !important
-				}
-				a{
-					padding: 0 0.5em 0.5em 0.5em !important
-				}
-				.one.in.post{
-					margin: 0 !important;
-					padding: 0;
-					border-radius: 0rem;
-					max-width: 100%;
-					width: 100%;
-					box-sizing: border-box;
-				}
-				.in{
-					border-radius: 0 !important;
-				}
-				.inner.current{
-					margin: 0.5em !important;
-					padding: 0;
-					border-radius: 0 !important;
-					max-width: 100%;
-					width: 100%;
-					box-sizing: border-box;
-					background: linear-gradient(to bottom right, white, violet) !important; color: #FF00FF;
-				}
-				.container{
-					background:none !important;
-					max-width: 100%;
-					width: 100%;
-					border-radius: 0 !important;					
-				}
-
-
-		}
-		@media (max-width: 400px) {
-				#im233{
-					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
-					margin: 0 !important
-				}
-				#imlibros{
+				#imgLib{
 					width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
 					height: auto !important;
 					margin: 0 !important;
@@ -438,6 +310,7 @@
 					margin: 0 !important;
 					padding:0 !important;
 					max-width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
+					width: 100% !important;
 					height: auto !important;
 				}
 				a{
@@ -478,8 +351,7 @@
 		<section id="one" class="in post bg-img" data-bg="libreriaAntigua.jpeg">
 			<div class="inner" style="">
 				<div class="container">
-					<br>
-					<img id="im233" src="images/logo.jpg" style="width: 20%; border-radius: 100rem; margin: 1rem auto; display: block;">
+					<img id="im233" src="images/logo.jpg" style="width: 15%; border-radius: 100rem; margin: 1rem auto; display: block;">
 					<!-- {{!-- menu de opciones --}} -->
 					<ul id="chau" class="nav nav-tabs" style="">
 						<li class="nav-item" id="">
@@ -514,9 +386,9 @@
 						</li>
 					</ul> 
 					<!-- contenido -->
-					<div class="" style="height: max-content !important;">
+					<div class="" style="height: max-content !important; margin-top:-1.2rem;">
 						<div class="content active" id="noti" tabindex="0">
-							<h3 style="text-align:center">Lanzamientos</h3>
+							<h4>Lanzamientos</h4>
 							<div class="scroll">
 								<div class="row ">
 									<div class="col" align="center">
@@ -527,12 +399,6 @@
 														<!-- Tus elementos carousel-item van aquí -->
 														<div class="carousel-item active">
 															<img id="imlibros"  src="images/preventa.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img id="imlibros" src="images/preventa.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img id="imlibros" src="images/preventa.jpg" class="card-img-top" >
 														</div>
 														<div class="carousel-item ">
 															<img id="imlibros" src="images/preventa.jpg" class="card-img-top" >
@@ -561,16 +427,10 @@
 														<div class="carousel-item ">
 															<img id="imlibros" src="images/preventa.jpg" class="card-img-top" >
 														</div>
-														<div class="carousel-item ">
-															<img id="imlibros" src="images/preventa.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img id="imlibros" src="images/preventa.jpg" class="card-img-top" >
-														</div>
 													</div>
 												</div>
 												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Helena de troya</h5>
+													<h5 class="card-title">El mito de helena</h5>
 													<p class="card-text" style="text-align:justify">En la presentación "El mito de Helena" en la Fundación Psicoanalítica Argentina, se exploran los pasajes de Helena y Las Troyanas de Eurípides. Este evento es conducido por destacadas figuras como Dana Taicher, Andrea Giana y Marina Cachan. La obra de Eurípides proporciona una plataforma rica para el análisis psicoanalítico, permitiendo la reflexión sobre los aspectos psicológicos y emocionales de los personajes y situaciones mitológicas. La convergencia entre el arte antiguo y la psicología contemporánea brinda una perspectiva única y enriquecedora. La presentación en la Fundación Psicoanalítica Argentina representa una oportunidad valiosa para la intersección entre el mito clásico y la comprensión psicoanalítica moderna.</p>
 												</div>
 											</div>	
@@ -1417,279 +1277,189 @@
 							</div>
 						</div>
 
-						<div class="content" id="opcion8" tabindex="0">
-							<h3>Arte</h3>
+						<div class="content" id="opcion8" tabindex="0" >
+							<h4>Arte</h4>
 							<div class="scroll">
-								<div class="row row-cols-1 row-cols-md-2 g-4">
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
+								<div class="">
+									<div class="" align="center">
+										<!-- mudar de piel -->
+										<div class="card" >
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
 														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
+														<div class="carousel-item active"  data-bs-interval="1000">
+															<img style="height:300px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/mudarpiel.jpg" class="card-img-top" >
 														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-item " data-bs-interval="1000">
+															<img style="height:300px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/mudarpiel.jpg" class="card-img-top" >
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
+												<div class="card-body" style="">
+													<h5 class="card-title">Mudar de piel</h5>
+													<p class="card-text" >
+														"Mudar de Piel" de Laura Loyola es una obra cautivadora y poética que explora la delicadeza de la renovación. A través de sus páginas, Loyola teje una narrativa exquisita sobre la transformación, revelando la belleza inherente a ese proceso. Con una prosa sutil y evocadora, el libro invita a los lectores a sumergirse en la reflexión sobre la naturaleza cíclica de la vida y la capacidad de reinventarnos. Una obra que deleitará a quienes buscan una experiencia literaria emotiva y enriquecedora.
 													</p>
 												</div>
 											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											<footer align="center" style="margin-left: 1rem;" >
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
 									<div class="col" align="center">
+										<!-- libro criar -->
 										<div class="card"  style="padding: 1rem;">
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active"  data-bs-interval="1000">
+																<img src="images/criar.jpg" class="card-img-top" >
+															</div>
+															<div class="carousel-item " data-bs-interval="1000">
+																<img src="images/criar.jpg" class="card-img-top" >
+															</div>
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
+												<div class="card-body">
+													<h5 class="card-title">Criar</h5>
+													<p class="card-text" >
+														En "En el Mundo de los Animales", ilustrado por Josefina Scarfó, los niños de todas las edades descubrirán fascinantes aspectos sobre la vida animal. A través de vívidas ilustraciones y lenguaje accesible, el libro explora las diversas formas en que los animales cuidan a sus crías. Desde la protección maternal hasta las estrategias de supervivencia, se abordan los desafíos y peligros que enfrentan los animales jóvenes. Una obra cautivadora que despierta la curiosidad y el amor por la naturaleza, fomentando el entendimiento y aprecio por la diversidad en el reino animal.
 													</p>
 												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
-											</footer>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row row-cols-1 row-cols-md-2 g-4">
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
-											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
-													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-													</div>
-												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
-													</p>
-												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</div>
+											<footer align="center" style="margin-left: 1rem;" >
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
 									<div class="col" align="center">
+										<!-- libro fragil vuelo -->
 										<div class="card"  style="padding: 1rem;">
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active"  data-bs-interval="1000">
+																<img src="images/fragil vuelo.jpg" class="card-img-top" >
+															</div>
+															<div class="carousel-item " data-bs-interval="1000">
+																<img src="images/fragil vuelo.jpg" class="card-img-top" >
+															</div>
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
+												<div class="card-body" >
+													<h5 class="card-title">Fragil vuelo.</h5>
+													<p class="card-text">
 														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
 													</p>
 												</div>
 											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											<footer align="center" style="margin-left: 1rem;" >
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
 						<div class="content" id="opcion9" tabindex="0">
 							<h3>Nacionales</h3>
 							<div class="scroll">
-								<div class="row row-cols-1 row-cols-md-2 g-4">
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
+								<div class="">
+									<div class="" align="center">
+										<!-- Versos Rantifusos -->
+										<div class="card" >
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
 														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
+														<div class="carousel-item active"  data-bs-interval="1000">
+															<img id="" src="images/versosrantifusos.jpg" class="card-img-top" >
 														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-item " data-bs-interval="1000">
+															<img id="imgLib" src="images/versosrantifusos.jpg" class="card-img-top" >
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
+												<div class="card-body" style="">
+													<h5 class="card-title">Versos Rantifusos</h5>
+													<p class="card-text" >
+														La colaboración de los distinguidos académicos Oscar Conde y Claudio Martínez ha dado vida a una joya literaria: una edición anotada de la poesía de Felipe Fernández YACARÉ, pionero de la poesía lunfarda con su obra "Versos rantifusos" (1916). Con 550 páginas, este libro revela sorpresas inéditas y recoge numerosos textos nunca antes publicados. La minuciosa anotación proporciona contextos reveladores, ofreciendo a los lectores una inmersión completa en la obra de este destacado autor, enriqueciendo la comprensión de su contribución a la literatura lunfarda.
 													</p>
 												</div>
 											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											<footer align="center" style="margin-left: 1rem;" >
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
 									<div class="col" align="center">
+										<!-- libro criar -->
 										<div class="card"  style="padding: 1rem;">
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active"  data-bs-interval="1000">
+																<img src="images/criar.jpg" class="card-img-top" >
+															</div>
+															<div class="carousel-item " data-bs-interval="1000">
+																<img id="imgLib" src="images/criar.jpg" class="card-img-top" >
+															</div>
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
+												<div class="card-body">
+													<h5 class="card-title">Criar</h5>
+													<p class="card-text" >
+														En "En el Mundo de los Animales", ilustrado por Josefina Scarfó, los niños de todas las edades descubrirán fascinantes aspectos sobre la vida animal. A través de vívidas ilustraciones y lenguaje accesible, el libro explora las diversas formas en que los animales cuidan a sus crías. Desde la protección maternal hasta las estrategias de supervivencia, se abordan los desafíos y peligros que enfrentan los animales jóvenes. Una obra cautivadora que despierta la curiosidad y el amor por la naturaleza, fomentando el entendimiento y aprecio por la diversidad en el reino animal.
 													</p>
 												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
-											</footer>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row row-cols-1 row-cols-md-2 g-4">
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
-											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
-													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-													</div>
-												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
-													</p>
-												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											</div>
+											<footer align="center" style="margin-left: 1rem;" >
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
 									<div class="col" align="center">
+										<!-- libro fragil vuelo -->
 										<div class="card"  style="padding: 1rem;">
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-inner">
+															<!-- Tus elementos carousel-item van aquí -->
+															<div class="carousel-item active"  data-bs-interval="1000">
+																<img src="images/fragil vuelo.jpg" class="card-img-top" >
+															</div>
+															<div class="carousel-item " data-bs-interval="1000">
+																<img id="imgLib" src="images/fragil vuelo.jpg" class="card-img-top" >
+															</div>
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
+												<div class="card-body" >
+													<h5 class="card-title">Fragil vuelo.</h5>
+													<p class="card-text">
 														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
 													</p>
 												</div>
 											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+											<footer align="center" style="margin-left: 1rem;" >
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
@@ -1704,16 +1474,10 @@
 													<div class="carousel-inner">
 														<!-- Tus elementos carousel-item van aquí -->
 														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
+															<img src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
 														</div>
 														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+															<img id="imgLib"src="images/camperafondo.jpeg" class="card-img-top" >
 														</div>
 													</div>
 												</div>
@@ -1880,7 +1644,6 @@
 							navTabs.style.width = '100%';
 							}
 					</script>
-					</div>
 				</div>
 			</div>
 			<footer>
