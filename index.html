@@ -179,6 +179,14 @@
 		
 		<!-- menu de opciones de rubros -->
 		<style>
+			#one{
+				max-height: 100% !important;
+				height: 100% !important
+			}
+			.in{
+				max-height: 100% !important;
+				height: 100%
+			}
 			#chau {
 				width:100%; 
 				font-size:0.35rem !important
@@ -190,11 +198,12 @@
 			}
 			.scroll {
 					overflow-y: scroll;
-					height: 320px; /* Ajusta la altura según tus necesidades */
+					height: 350px; /* Ajusta la altura según tus necesidades */
 					background: linear-gradient(to bottom right, white, rgb(198, 7, 241)) !important; color: #FF00FF;
 				}
 			
 				.scroll p {
+
 					text-align: justify;
 					margin: 0;
 					padding: 10px;
@@ -225,6 +234,8 @@
 			}
 			.card-text{
 				width: 60%;
+				font-size:1.5rem;
+				font-family: lobster;
 			}
 
 			.nav-tabs {
@@ -359,7 +370,7 @@
 		<section id="one" class="in post bg-img" data-bg="libreriaAntigua.jpeg">
 			<div class="inner" style="">
 				<div class="container">
-					<img id="im233" src="images/logo.jpg" style="width: 15%; border-radius: 100rem; margin: 1rem auto; display: block;">
+					<img id="im233" src="images/logo.jpg" style="width: 15%; border-radius: 100rem; margin: 0 auto 0.51rem auto; display: block;">
 					<!-- {{!-- menu de opciones --}} -->
 					<ul id="chau" class="nav nav-tabs" style="">
 						<li class="nav-item" id="">
@@ -732,135 +743,31 @@
 						<div class="content" id="opcion4" tabindex="0">
 							<h3>Filosofia</h3>
 							<div class="scroll">
-								<div class="row row-cols-1 row-cols-md-2 g-4">
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
+								<div class="">
+									<div class="" align="center">
+										<!-- mudar de piel -->
+										<div class="card" >
 											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
+												<div id="miCarousel" class="carousel slide" data-ride="carousel">
 													<div class="carousel-inner">
 														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
+														<div class="carousel-item active"  data-bs-interval="500">
+															<img id="imgLib" src="images/lectuFilo.jpg" class="card-img-top" >
 														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
+														<div class="carousel-item " data-bs-interval="500">
+															<img id="imgLib" src="images/lectuFilo.jpg" class="card-img-top" >
 														</div>
 													</div>
 												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
+												<div class="card-body" style="">
+													<h5 class="card-title">Lecturas analiticas esceneas filosoficas</h5>
+													<p class="card-text" >
+														"Pasajes Filosóficos: Lecturas Analíticas Escénicas" presenta una fusión única entre la filosofía y el arte escénico. Este libro sumerge a los lectores en escenarios filosóficos a través de lecturas analíticas profundas. Cada escena representa un diálogo intrigante entre personajes que exploran cuestiones existenciales, éticas y metafísicas. Con un enfoque innovador, el autor invita a los lectores a reflexionar sobre conceptos filosóficos complejos de manera accesible, fusionando la profundidad intelectual con la expresión teatral para ofrecer una experiencia enriquecedora y única.
 													</p>
 												</div>
 											</div>	
 											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
-											</footer>
-										</div>
-									</div>
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
-											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
-													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-													</div>
-												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
-													</p>
-												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
-											</footer>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row row-cols-1 row-cols-md-2 g-4">
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
-											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
-													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-													</div>
-												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
-													</p>
-												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
-											</footer>
-										</div>
-									</div>
-									<div class="col" align="center">
-										<div class="card"  style="padding: 1rem;">
-											<div style="align-items: center;">
-												<div id="miCarousel" class="carousel slide" data-ride="carousel" style="width: 90% !important;">
-													<div class="carousel-inner">
-														<!-- Tus elementos carousel-item van aquí -->
-														<div class="carousel-item active">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/IMG-20240202-WA0006.jpg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-														<div class="carousel-item ">
-															<img style="height:200px;width: auto; border-radius: 1rem; margin-top:1rem" src="images/camperafondo.jpeg" class="card-img-top" >
-														</div>
-													</div>
-												</div>
-												<div class="card-body" style="margin-top:-2rem">
-													<h5 class="card-title">Imagen de prueba</h5>
-													<p class="card-text" style="text-align:justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies elit. Vivamus in justo nec neque fermentum commodo. Sed in quam sit amet ligula laoreet consectetur. Integer euismod ullamcorper nisl, in condimentum dui tincidunt vel. Vestibulum auctor sapien nec metus malesuada, ut congue elit posuere. Nullam euismod nunc at felis auctor, non eleifend sem auctor. Fusce eleifend, ipsum eu auctor vulputate, odio nisl vulputate urna, in posuere justo justo vel quam. Sed bibendum efficitur ex, eu suscipit urna fermentum non. Suspendisse potenti. Aenean quis mi et quam gravida dictum nec vel elit. Suspendisse potenti.
-													</p>
-												</div>
-											</div>	
-											<footer align="left" style="margin-left: 1rem;" >
-												<a style="color: rgb(33, 32, 32) !important" href="generic.html" class="button alt">Adquirir</a>
+												<a style="" href="generic.html" class="button alt">Adquirir</a>
 											</footer>
 										</div>
 									</div>
@@ -1103,10 +1010,10 @@
 														<div class="carousel-inner">
 															<!-- Tus elementos carousel-item van aquí -->
 															<div class="carousel-item active"  data-bs-interval="1000">
-																<img id="imgLib" src="images/peligasomarse.jpg" class="card-img-top" >
+																<img id="imgLib" src="images/peligroasom.jpg" class="card-img-top" >
 															</div>
 															<div class="carousel-item " data-bs-interval="1000">
-																<img id="imgLib" src="images/peligroasom.jpg" class="card-img-top" >
+																<img id="imgLib" src="images/peligasomarse.jpg" class="card-img-top" >
 															</div>
 														</div>
 													</div>
