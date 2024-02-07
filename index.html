@@ -234,7 +234,6 @@
 				width: 100%;
 				max-height: 100%;
 				height: 100%;
-				margin: 0 auto;
 				padding: 20px;
 				box-sizing: border-box;
 				/* background: linear-gradient(to bottom right, white, rgb(198, 7, 241)) !important; color: #FF00FF; */
@@ -266,6 +265,11 @@
 
 			.nav-item {
 			margin-right: -4px;
+			cursor: pointer !important; 
+			}
+
+			#notiLi {
+				cursor: pointer; /* Cambia el cursor a una manita */
 			}
 
 			.nav-link {
@@ -274,6 +278,7 @@
 			padding: 10px 15px;
 			margin-right: -4px;
 			font-size: 20px;
+			cursor: pointer !important; 
 			}
 
 			.nav-link.active {
@@ -289,7 +294,7 @@
 			border: 1px solid #cccccc;
 			border-radius: 1rem;
 			width: 100%;
-			margin: 20px auto;
+			margin: auto;
 			box-sizing: border-box;
 			}
 
@@ -393,40 +398,40 @@
 				<div class="container bg-img"  data-bg="">
 					<img id="im233" src="images/logo.jpg" style="" hidden>
 					<!-- {{!-- menu de opciones --}} -->
-					<ul id="chau" class="nav nav-tabs" style="">
-						<li class="nav-item" id="">
+					<ul id="chau" class="nav nav-tabs" >
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;" >
 							<a class="nav-link active" href="#noti" id="noti2" onclick="enfocarElemento('noti')">Lanzamientos</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link " href="#opcion2" id="psi" onclick="enfocarElemento('opcion2')">Psicoanálisis</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion3" onclick="enfocarElemento('opcion3')">Narrativa</a>
 						</li>
-						<li class="nav-item" >
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion4" onclick="enfocarElemento('opcion4')">Filosofía</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion5" onclick="enfocarElemento('opcion5')">Feminismo</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion6" onclick="enfocarElemento('opcion6')">Ensayo</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion7" onclick="enfocarElemento('opcion7')">Poesía</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion8" onclick="enfocarElemento('opcion8')">Arte</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion9" onclick="enfocarElemento('opcion9')">Nacionales</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="notiLi" style="cursor: pointer !important;">
 							<a class="nav-link" href="#opcion10" onclick="enfocarElemento('opcion10')">Promociones</a>
 						</li>
 					</ul> 
 					<!-- contenido -->
-					<div class="contenido" style="height: max-content !important; margin-top:-1.2rem;">
+					<div class="contenido" style="height: max-content !important;">
 						<div class="content active" id="noti" tabindex="0">
 							<h4>Lanzamientos</h4>
 							<div class="scroll">
@@ -1291,7 +1296,20 @@
 				<a href="#genesis" class="more" style="background-color: #FF00FF; ">Learn More</a>
 			</footer>
 		</section>
-
+		<script>
+			document.getElementById('notiLi').addEventListener('click', function() {
+				// Simular clic en el enlace al hacer clic en el <li>
+				document.getElementById('noti2').click();
+			});
+			
+			function enfocarElemento(elementoId) {
+				// Agrega la lógica de enfocar el elemento si es necesario
+				var elemento = document.getElementById(elementoId);
+				if (elemento) {
+					elemento.focus();
+				}
+			}
+		</script>
 		<!-- Jorge Curcio -->
 		<section id="genesis" class="futer post  bg-img" data-bg="feto.jpg" style="text-align: center;">
 			<style>
