@@ -26,6 +26,7 @@
 			});
 		</script>
 	</head>
+
 	<body>
 
 		<!-- Header -->
@@ -34,7 +35,7 @@
 			<a href="#menu"><span>Menu</span></a>
 		</header>
 
-		<!-- Nav -->
+		<!-- Menuv -->
 		<nav id="menu" class="bg-img" data-bg="manchaHor.jpg" style="font-family: lobster; color: #e1dde7;">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
@@ -93,44 +94,44 @@
 		</div>
 
 		<!-- pantalla de inicio -->
-		<section id="banner" class="bg-img" data-bg="manchaHor.jpg" style="display: block;">
+		<section id="banner" class="bg-img" data-bg="manchaHor.jpg" >
 			<style>
 				#im2{
-					width: 18% !important; /* Máximo del 20% en pantallas responsive hori */
-					margin: auto !important
+					width: 50% !important; /* Máximo del 20% en pantallas responsive hori */
+					margin: auto !important;
+					border-radius: 100rem;
 				}
+				#AbajoDer{
+					display: absolute!important;
+					margin: 350px 0px 0 1000px  !important;				}
 				
 				@media (max-width: 700px) {
+					#AbajoDer{
+						margin: 250px 0px 0 200px  !important;
+					}
+
 					#alturabtn{
 						margin-bottom: 12rem !important;
 					}
 
 					#im2{
-						width: 60% !important; /* Máximo del 20% en pantallas responsive verticales */
+						width: 100% !important; /* Máximo del 20% en pantallas responsive verticales */
 						justify-content:center !important;
 						align-items:center !important;
-					}
-
-					#banner22{
-						margin: 4rem 0 2rem 0 !important
 					}
 				}
 
 			</style>
-			<div id="banner22">
+			<div id="AbajoDer" align="center">
 				<div class="inner">
-					<header>
-						<h1></h1>
-					</header>
-					<img id="im2" src="images/logo.jpg" style="border-radius: 100rem;filter: brightness(1.2);opacity: 1;">
+					<img id="im2" src="images/logo.jpg" >
 				</div>
-				<br>
 				<div class="inner">
 					<ul class="icons">
 						<li>
 							<a href="https://www.facebook.com/la.d.ignorancia/?locale=es_LA" class="icon round fa-facebook"><span class="label">Facebook</span></a>
 						</li>
-						<li style="margin: 0 1rem;">
+						<li style="">
 							<a href="https://www.instagram.com/ladoctaignoranciaok/?hl=es-la" class="icon round fa-instagram"><span class="label">Instagram</span></a>
 						</li>
 						<li>
