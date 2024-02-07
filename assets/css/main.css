@@ -4033,7 +4033,7 @@
 			background-color: #000;
 			height: 100%;
 			left: 0;
-			opacity: 0.45;
+			opacity: 0.1;  /*controla el brillo de post*/
 			position: absolute;
 			top: 0;
 			width: 100%;
